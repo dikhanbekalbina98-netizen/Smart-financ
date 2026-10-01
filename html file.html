@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Finance</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Smart Finance</h1>
+            <p>Простой способ управлять своими финансами</p>
+        </div>
+    </header>
+
+
+    <nav>
+        <div class="container nav-menu">
+            <a href="#about">О проекте</a>
+            <a href="#features">Возможности</a>
+            <a href="#contact">Контакты</a>
+        </div>
+    </nav>
+
+
+    <main>
+
+        <section id="about">
+            <div class="container about-content">
+
+                <div class="about-text">
+                    <h2>О проекте</h2>
+
+                    <p>
+                        Smart Finance — это проект для удобного контроля
+                        личных финансов. С его помощью можно следить
+                        за доходами, расходами и накоплениями.
+                    </p>
+
+                    <button id="myButton">
+                        Узнать больше
+                    </button>
+
+                    <p id="message"></p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Наша цель</h3>
+
+                    <p>
+                        Помочь пользователям планировать бюджет,
+                        контролировать расходы и достигать
+                        финансовых целей.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="features">
+            <div class="container">
+
+                <h2>Возможности</h2>
+
+                <div class="features">
+
+                    <div class="feature-card">
+                        <h3>💰 Доходы</h3>
+                        <p>
+                            Учитывайте зарплату и другие источники дохода.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>📊 Расходы</h3>
+                        <p>
+                            Следите за ежедневными и ежемесячными расходами.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>🎯 Финансовые цели</h3>
+                        <p>
+                            Планируйте накопления и контролируйте прогресс.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="contact">
+            <div class="container contact">
+
+                <h2>Связаться с нами</h2>
+
+                <p>
+                    Хотите узнать больше о проекте?
+                </p>
+
+                <button id="contactButton">
+                    Нажмите здесь
+                </button>
+
+                <p id="contactMessage"></p>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Smart Finance</p>
+    </footer>
+
+
+    <script>
+
+        // Первая кнопка
+        const button = document.getElementById("myButton");
+        const message = document.getElementById("message");
+
+        button.addEventListener("click", function () {
+
+            message.textContent =
+                "Smart Finance помогает удобно управлять личными финансами!";
+
+        });
+
+
+        // Вторая кнопка
+        const contactButton = document.getElementById("contactButton");
+        const contactMessage = document.getElementById("contactMessage");
+
+        contactButton.addEventListener("click", function () {
+
+            contactMessage.textContent =
+                "Спасибо за интерес к проекту!";
+
+        });
+
+    </script>
+
+</body>
+</html>
+```
